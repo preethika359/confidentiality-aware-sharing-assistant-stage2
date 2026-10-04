@@ -1,0 +1,55 @@
+{
+  "policy_version": "2.0-semantic",
+  "permission_levels": {
+    "PUBLIC": ["Student", "Faculty", "Admin"],
+    "INTERNAL": ["Student", "Faculty", "Admin"],
+    "FACULTY_ONLY": ["Faculty", "Admin"],
+    "CONFIDENTIAL": ["Admin"],
+    "ADMIN_ONLY": ["Admin"]
+  },
+  "role_hierarchy": {"Student": 1, "Faculty": 2, "Admin": 3},
+  "high_impact_actions": ["Sensitive Sharing", "Manual Override"],
+  "sensitive_summary_policy": {
+    "unauthorized_action": "BLOCK",
+    "authorized_action": "ALLOW_WITH_AUDIT"
+  },
+  "sensitivity": {
+    "keywords": [
+      "disciplinary investigation", "strictly confidential", "salary revision",
+      "restricted to university administrators", "faculty performance review",
+      "staff evaluation", "confidential information", "restricted information",
+      "internal investigation", "performance evaluation", "disciplinary action",
+      "salary details", "financial information", "student record", "medical record",
+      "phone number", "personal email", "confidential", "restricted", "private record"
+    ],
+    "regex_patterns": [
+      "\\bSTU\\d+\\b",
+      "\\b\\d{10}\\b",
+      "\\bsalary\\s+(?:is|was|of)?\\s*[$€£]?\\d+(?:,\\d{3})*(?:\\.\\d+)?",
+      "\\b\\d+%\\s*(?:salary|increment|hike|raise)\\b",
+      "\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b"
+    ],
+    "ner_sensitive_phrases": [
+      "student identity", "student identifier", "employee compensation",
+      "medical details", "disciplinary case", "private contact details",
+      "performance appraisal", "staff assessment", "financial records"
+    ],
+    "semantic_prototypes": [
+      "private student identity and disciplinary case",
+      "employee salary compensation and pay information",
+      "staff performance appraisal and evaluation",
+      "confidential medical or health information",
+      "private email phone contact details",
+      "restricted financial records and budget",
+      "internal investigation and disciplinary action"
+    ],
+    "semantic_threshold": 0.16,
+    "high_severity_terms": ["disciplinary", "salary", "medical", "student record", "financial", "private student identity"],
+    "medium_severity_terms": ["evaluation", "performance", "contact details", "restricted", "confidential"]
+  },
+  "experiment": {
+    "target_zero_leakage": 0.0,
+    "target_detection_recall": 0.90,
+    "target_detection_precision": 0.80
+  }
+}

@@ -1,0 +1,21 @@
+document_id,title,permission_label,content,ground_truth_sensitive,sensitive_category
+DOC001,Examination Policy,PUBLIC,"Semester examination starts on June 10. Students must report 30 minutes before the exam.",0,none
+DOC002,Internal Timetable,INTERNAL,"The university internal assessment schedule will be published next week.",0,none
+DOC003,Faculty Meeting,FACULTY_ONLY,"Faculty meeting will be conducted on June 5. Internal staff evaluation will be discussed.",1,performance
+DOC004,Student Disciplinary Case,CONFIDENTIAL,"Student STU001 is under disciplinary investigation. This information is strictly confidential.",1,disciplinary
+DOC005,Faculty Salary Revision,ADMIN_ONLY,"Faculty salary revision details are restricted to university administrators.",1,salary
+DOC006,Library Policy,PUBLIC,"The library is open from 8 AM to 6 PM on working days.",0,none
+DOC007,Student Attendance,INTERNAL,"Students must maintain the minimum attendance requirement according to university regulations.",0,none
+DOC008,Staff Performance,FACULTY_ONLY,"Faculty performance review information is available only to authorised faculty members and administrators.",1,performance
+DOC009,Scholarship Policy,PUBLIC,"Eligible students can apply for university scholarships before the announced deadline.",0,none
+DOC010,Administrative Budget,ADMIN_ONLY,"The annual departmental budget contains restricted financial information for administrators.",1,financial
+DOC011,Student Contact Test,CONFIDENTIAL,"Student STU245 can be contacted at student245@example.edu. The record is confidential.",1,contact
+DOC012,Mixed Policy Notice,FACULTY_ONLY,"The workshop is on Friday. Staff evaluation notes must remain restricted.",1,performance
+DOC013,Health Accommodation,CONFIDENTIAL,"A student's medical details are recorded for an accommodation request and must remain private.",1,medical
+DOC014,Compensation Memo,ADMIN_ONLY,"The employee compensation package and monthly pay information are restricted to administrators.",1,salary
+DOC015,Private Contact List,CONFIDENTIAL,"Private contact details include a phone number and personal email for the case coordinator.",1,contact
+DOC016,Discipline Paraphrase,CONFIDENTIAL,"A learner's conduct case is being reviewed internally and the identity must not be disclosed.",1,disciplinary
+DOC017,Appraisal Paraphrase,FACULTY_ONLY,"The staff appraisal discusses individual performance and should only reach authorised faculty.",1,performance
+DOC018,Finance Paraphrase,ADMIN_ONLY,"The department's spending records contain private financial figures for administrators.",1,financial
+DOC019,General Workshop,PUBLIC,"The student workshop registration closes Friday at 5 PM.",0,none
+DOC020,Campus Notice,INTERNAL,"The campus shuttle will operate every 30 minutes during examination week.",0,none

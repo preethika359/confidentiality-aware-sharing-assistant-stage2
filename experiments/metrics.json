@@ -1,0 +1,19 @@
+{
+  "dataset_documents": 20,
+  "total_role_document_cases": 60,
+  "unauthorised_cases": 22,
+  "baseline_leakage_rate": 0.6818,
+  "protected_leakage_rate": 0.0,
+  "leakage_reduction_percent": 100.0,
+  "target_zero_leakage": 0.0,
+  "protected_meets_zero_leakage_target": true,
+  "detector_true_positive": 39,
+  "detector_false_positive": 6,
+  "detector_false_negative": 0,
+  "detector_precision": 0.8667,
+  "detector_recall": 1.0,
+  "detector_f1": 0.9286,
+  "target_precision": 0.8,
+  "target_recall": 0.9,
+  "semantic_layer_enabled": true
+}
